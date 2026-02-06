@@ -26,33 +26,34 @@ For Windows, see [here](https://www.thomas-krenn.com/en/wiki/Cmd_commands_under_
 
 ### Getting class code and working on your own
 
-#### The best way - Cloud
-
-1. The first time, make a Github account and fork the repository to your Github account: go to https://github.com/bloemj/AUC_TM_2025 and click Fork
+1. The first time, make a Github account and fork the repository to your Github account: go to https://github.com/bloemj/AUC_TM_2026 and click Fork
 2. Get updates to the code before every lab: In your fork on the Github website, click "Fetch upstream"
-3. Launch notebooks by going to your Google Colab: https://colab.research.google.com/ and loading them using the "Open Notebook" window. Enter the GitHub URL of the fork of the course materials in your own GitHub account to be able to save your changes. 
 
-#### The best way - Offline
+Then, you can either work with the course materials on your own laptop, or in the cloud with Google Colab:
 
-1. The first time, clone the repository locally using `git clone git@github.com:bloemj/AUC_TM_2025.git`.
-2. Keep getting updates to the code before every lab by going to your local repository directory (e.g., `cd PATH_TO_REPO`) and `git pull`. This will pull all remote changes to local, and update your repository.
+#### Working on your own system
 
-#### The easy way - 1
+3. Clone the repository locally using `git clone git@github.com:example/AUC_TM_2026.git`, but replacing 'example' with your own GitHub username.
+4. Get updates to the code before every lab by going to your local repository directory on your system (e.g., `cd PATH_TO_REPO`) and `git pull`. This will pull all remote changes to local, and update the repository that is on your system.
 
 You might want to use the [GitHub Desktop app](https://desktop.github.com) to keep track of your repositories. If you have it installed, instead of cloning the repo you can use the Open in Desktop option.
 
-#### The easy way - 2
+#### In the cloud
+
+3. Launch notebooks by going to your Google Colab: https://colab.research.google.com/ and loading them using the "Open Notebook" window. Enter the GitHub URL of the fork of the course materials in your own GitHub account to be able to save your changes. 
+
+#### I don't want to use Git
 
 Just download the repository code before every lab, by clicking on `Clone or download`, and then `Download ZIP`. You will then need to unzip the downloaded file and open it either in Google Colab or locally.
 
-**IMPORTANT**: Cloning or downloading a copy of the course repo will conflict with any change you made yourself to the files in there. This is especially the case if you do not work in your own fork of the repository: if you pull, then you edit, then I edit, then you pull again, there will likely be a conflict if we both changed the same files. I recommend to fork the repository to your own Github account to have version control for your own edits (see The best way - Cloud, but you can fork locally too). Alternatively, when working locally, I recommend that you put your edited copies of the repository contents in a separate folder to keep your changes.
+**IMPORTANT**: Cloning or downloading a copy of the course repo will conflict with any change you made yourself to the files in there. This is especially the case if you do not work in your own fork of the repository: if you pull, then you edit, then I edit, then you pull again, there will likely be a conflict if we both changed the same files. I recommend to fork the repository to your own Github account to have version control for your own edits (see "In the cloud" method, but you can fork locally too). Alternatively, when working locally, I recommend that you put your edited copies of the repository contents in a separate folder to keep your changes.
 
 ### Running Python on your own machine: Conda
 
-1. Install conda using the [Anaconda distribution](https://www.anaconda.com/distribution/), remember to pick Python 3.8 and the OS you need. Get the graphical installer.
+1. Install conda using the [Anaconda distribution](https://www.anaconda.com/distribution/), remember to pick Python 3.12 and the OS you need. Get the graphical installer.
 2. After installation, you will have an app called **Anaconda Navigator** installed. You can create and manage enviromnents and use jupyter notebooks from it, without using the terminal, mostly.
 3. If you use the terminal, remember to relunch all your terminal windows after the installation of conda. Then refer to [this guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). The msot basic commands are:
-    - `conda create -n myenv python=3.8 anaconda` which will create an environment named `myenv` and install the libraries in the anaconda distribution into it (handy to have most of the popular stuff at the ready).
+    - `conda create -n myenv python=3.12 anaconda` which will create an environment named `myenv` and install the libraries in the anaconda distribution into it (handy to have most of the popular stuff at the ready).
     - `conda activate myenv`.
     - `conda deactivate`.
     - `conda remove --name myenv --all` to remove an environment and all its packages.
